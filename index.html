@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorite Mountain Voting</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Decoration -->
+    <div class="mountain-bg mountain-one"></div>
+    <div class="mountain-bg mountain-two"></div>
+
+    <main class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="badge">🏔️ MINI VOTING APP</div>
+
+            <h1>
+                What Is Your
+                <span>Favorite Mountain?</span>
+            </h1>
+
+            <p>
+                Choose your favorite mountain and cast your vote!
+            </p>
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-icon">🗳️</span>
+
+                <div>
+                    <small>Total Votes</small>
+                    <strong id="totalVotes">0</strong>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">🏆</span>
+
+                <div>
+                    <small>Current Winner</small>
+                    <strong id="winner">-</strong>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Voting Cards -->
+        <section class="mountain-grid">
+
+            <!-- Merapi -->
+            <article class="mountain-card">
+
+                <img src="images/gunung merapi.jpg" class="mountain-image" alt="Gunung Merapi">
+
+                <h2>Mount Merapi</h2>
+
+                <p class="location">
+                    📍 Central Java
+                </p>
+
+                <div class="vote-info">
+                    <span>Votes</span>
+                    <strong id="merapiVotes">0</strong>
+                </div>
+
+                <div class="progress-container">
+                    <div
+                        class="progress-bar"
+                        id="merapiProgress"
+                    ></div>
+                </div>
+
+                <p class="percentage" id="merapiPercentage">
+                    0%
+                </p>
+
+                <button
+                    class="vote-button"
+                    data-mountain="merapi"
+                >
+                    Vote for Merapi
+                </button>
+
+            </article>
+
+
+            <!-- Bromo -->
+            <article class="mountain-card">
+
+                <img src="images/gunung bromo.jpg" class="mountain-image" alt="Gunung Merapi">
+
+                <h2>Mount Bromo</h2>
+
+                <p class="location">
+                    📍 East Java
+                </p>
+
+                <div class="vote-info">
+                    <span>Votes</span>
+                    <strong id="bromoVotes">0</strong>
+                </div>
+
+                <div class="progress-container">
+                    <div
+                        class="progress-bar"
+                        id="bromoProgress"
+                    ></div>
+                </div>
+
+                <p class="percentage" id="bromoPercentage">
+                    0%
+                </p>
+
+                <button
+                    class="vote-button"
+                    data-mountain="bromo"
+                >
+                    Vote for Bromo
+                </button>
+
+            </article>
+
+
+            <!-- Rinjani -->
+            <article class="mountain-card">
+
+                <img src="images/gunung rinjani.jpg" class="mountain-image" alt="Gunung Merapi">
+
+                <h2>Mount Rinjani</h2>
+
+                <p class="location">
+                    📍 Lombok
+                </p>
+
+                <div class="vote-info">
+                    <span>Votes</span>
+                    <strong id="rinjaniVotes">0</strong>
+                </div>
+
+                <div class="progress-container">
+                    <div
+                        class="progress-bar"
+                        id="rinjaniProgress"
+                    ></div>
+                </div>
+
+                <p class="percentage" id="rinjaniPercentage">
+                    0%
+                </p>
+
+                <button
+                    class="vote-button"
+                    data-mountain="rinjani"
+                >
+                    Vote for Rinjani
+                </button>
+
+            </article>
+
+
+            <!-- Semeru -->
+            <article class="mountain-card">
+
+                <img src="images/gunung semeru.jpg" class="mountain-image" alt="Gunung Merapi">
+
+                <h2>Mount Semeru</h2>
+
+                <p class="location">
+                    📍 East Java
+                </p>
+
+                <div class="vote-info">
+                    <span>Votes</span>
+                    <strong id="semeruVotes">0</strong>
+                </div>
+
+                <div class="progress-container">
+                    <div
+                        class="progress-bar"
+                        id="semeruProgress"
+                    ></div>
+                </div>
+
+                <p class="percentage" id="semeruPercentage">
+                    0%
+                </p>
+
+                <button
+                    class="vote-button"
+                    data-mountain="semeru"
+                >
+                    Vote for Semeru
+                </button>
+
+            </article>
+
+        </section>
+
+
+        <!-- Feedback -->
+        <div
+            class="feedback"
+            id="feedback"
+        >
+            👋 Choose a mountain to vote!
+        </div>
+
+
+        <!-- Reset -->
+        <button
+            class="reset-button"
+            id="resetButton"
+        >
+            🔄 Reset Voting
+        </button>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                Mini Voting App • HTML + CSS + JavaScript
+            </p>
+
+            <span>
+                Created for HSI Boarding School 🚀
+            </span>
+        </footer>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
